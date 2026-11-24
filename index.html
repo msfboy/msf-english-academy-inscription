@@ -1,0 +1,2425 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Inscription — MSF'S English Learning Academy (Rentrée 5 Déc. 2026)</title>
+  <meta name="description" content="Formulaire officiel d'inscription à la Formation Standard d'Anglais de MSF'S English Learning Academy. Rentrée le 5 décembre 2026 à Lomé (Carrefour Adroukpapé, Avedji Limosine)." />
+  <meta property="og:title" content="Inscription — MSF'S English Learning Academy" />
+  <meta property="og:description" content="Formation Standard d'Anglais — Rentrée le 5 décembre 2026. Sessions Matin, Midi et Soir. Tarif : 30 000 FCFA | Inscription : 5 000 FCFA." />
+  <meta property="og:image" content="https://msfboy.github.io/msf-english-academy-inscription/logo.png" />
+  <meta property="og:url" content="https://msfboy.github.io/msf-english-academy-inscription/" />
+  <meta property="og:type" content="website" />
+  <link rel="icon" type="image/png" href="logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --blue-primary: #0077e6;
+      --blue-dark: #005bb5;
+      --blue-deep: #0b2545;
+      --blue-soft: #eef6ff;
+      --blue-border: #bfdbfe;
+      --ink-dark: #0f172a;
+      --ink-muted: #475569;
+      --ink-light: #94a3b8;
+      --line-color: #cbd5e1;
+      --bg-field: #f8fafc;
+      --gold-accent: #c8a45d;
+      --success: #059669;
+      --success-bg: #ecfdf5;
+      --danger: #dc2626;
+      --danger-bg: #fef2f2;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #e2e8f0;
+      color: var(--ink-dark);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-bottom: 36px;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ================= FLOATING TOOLBAR (SCREEN ONLY) ================= */
+    .toolbar {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      width: 100%;
+      background: rgba(15, 23, 42, 0.94);
+      backdrop-filter: blur(10px);
+      color: #fff;
+      padding: 10px 20px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.18);
+      margin-bottom: 24px;
+    }
+
+    .toolbar-left {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .toolbar-title {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-weight: 700;
+      font-size: 14px;
+      letter-spacing: 0.2px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .toolbar-badge {
+      background: var(--blue-primary);
+      color: #fff;
+      font-size: 10px;
+      font-weight: 700;
+      padding: 2px 7px;
+      border-radius: 99px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .progress-wrap {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 12px;
+      color: #cbd5e1;
+    }
+
+    .progress-track {
+      width: 110px;
+      height: 7px;
+      background: rgba(255, 255, 255, 0.16);
+      border-radius: 99px;
+      overflow: hidden;
+    }
+
+    .progress-fill {
+      height: 100%;
+      width: 0%;
+      background: linear-gradient(90deg, #38bdf8, #22c55e);
+      border-radius: 99px;
+      transition: width 0.25s ease;
+    }
+
+    .toolbar-actions {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .btn {
+      appearance: none;
+      border: none;
+      border-radius: 7px;
+      padding: 7px 13px;
+      font-family: inherit;
+      font-size: 12.5px;
+      font-weight: 600;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: all 0.18s ease;
+      text-decoration: none;
+    }
+
+    .btn-ghost {
+      background: rgba(255, 255, 255, 0.1);
+      color: #f1f5f9;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+    }
+    .btn-ghost:hover {
+      background: rgba(255, 255, 255, 0.18);
+    }
+
+    .btn-whatsapp {
+      background: #16a34a;
+      color: #fff;
+    }
+    .btn-whatsapp:hover {
+      background: #15803d;
+    }
+
+    .btn-primary {
+      background: var(--blue-primary);
+      color: #fff;
+      box-shadow: 0 2px 10px rgba(0, 119, 230, 0.35);
+    }
+    .btn-primary:hover {
+      background: #0066cc;
+      transform: translateY(-1px);
+    }
+
+    .btn-submit {
+      background: linear-gradient(135deg, #059669 0%, #047857 100%);
+      color: #fff;
+      box-shadow: 0 2px 10px rgba(5, 150, 105, 0.35);
+    }
+    .btn-submit:hover {
+      background: linear-gradient(135deg, #047857 0%, #065f46 100%);
+      transform: translateY(-1px);
+    }
+    .btn-submit:disabled {
+      opacity: 0.65;
+      cursor: wait;
+      transform: none;
+    }
+
+    /* Confirmation Modal (Screen Only) */
+    .modal-backdrop {
+      position: fixed;
+      inset: 0;
+      background: rgba(15, 23, 42, 0.65);
+      backdrop-filter: blur(4px);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      z-index: 300;
+      padding: 16px;
+    }
+    .modal-backdrop.open {
+      display: flex;
+    }
+    .modal-card {
+      background: #ffffff;
+      border-radius: 14px;
+      max-width: 460px;
+      width: 100%;
+      padding: 24px;
+      box-shadow: 0 25px 60px rgba(0, 0, 0, 0.3);
+      text-align: center;
+    }
+    .modal-icon {
+      width: 54px;
+      height: 54px;
+      border-radius: 50%;
+      background: var(--success-bg);
+      color: var(--success);
+      font-size: 26px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 12px;
+      border: 2px solid #a7f3d0;
+    }
+    .modal-card h3 {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 18px;
+      color: var(--ink-dark);
+      margin-bottom: 8px;
+    }
+    .modal-card p {
+      font-size: 13.5px;
+      color: var(--ink-muted);
+      line-height: 1.5;
+      margin-bottom: 14px;
+    }
+    .modal-dossier {
+      background: var(--blue-soft);
+      border: 1px solid var(--blue-border);
+      border-radius: 8px;
+      padding: 10px 14px;
+      font-size: 13px;
+      color: var(--blue-deep);
+      margin-bottom: 18px;
+      text-align: left;
+      line-height: 1.55;
+    }
+    .modal-actions {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 8px;
+    }
+
+    /* Toast Notification */
+    .toast {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      background: var(--ink-dark);
+      color: #fff;
+      padding: 11px 16px;
+      border-radius: 9px;
+      font-size: 13px;
+      font-weight: 500;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+      opacity: 0;
+      transform: translateY(12px);
+      pointer-events: none;
+      transition: all 0.25s ease;
+      z-index: 200;
+      border-left: 4px solid var(--blue-primary);
+    }
+    .toast.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .toast.error {
+      border-left-color: var(--danger);
+    }
+    .toast.success {
+      border-left-color: var(--success);
+    }
+
+    /* ================= A4 SHEET CONTAINER ================= */
+    .a4-sheet {
+      width: 210mm;
+      height: 297mm;
+      background: #ffffff;
+      box-shadow: 0 20px 55px rgba(15, 23, 42, 0.22), 0 0 0 1px rgba(15, 23, 42, 0.06);
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* ================= HEADER (MATCHING FLYER) ================= */
+    .sheet-header {
+      position: relative;
+      height: 39mm;
+      display: flex;
+      align-items: stretch;
+      justify-content: space-between;
+      background: #ffffff;
+      border-bottom: 2.5px solid var(--blue-primary);
+      overflow: hidden;
+      flex-shrink: 0;
+    }
+
+    .header-brand {
+      display: flex;
+      align-items: center;
+      gap: 3.5mm;
+      padding: 4mm 4mm 4mm 8mm;
+      width: 47%;
+      z-index: 2;
+    }
+
+    .brand-logo {
+      width: 24mm;
+      height: auto;
+      object-fit: contain;
+      flex-shrink: 0;
+    }
+
+    .brand-text h1 {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 11.5pt;
+      font-weight: 800;
+      line-height: 1.15;
+      color: var(--ink-dark);
+      letter-spacing: 0.2px;
+      text-transform: uppercase;
+    }
+
+    .brand-tagline {
+      margin-top: 1.5mm;
+      font-size: 6.8pt;
+      color: var(--ink-muted);
+      line-height: 1.3;
+    }
+
+    .header-banner {
+      position: relative;
+      width: 55%;
+      background: linear-gradient(135deg, #0084ff 0%, #0066cc 100%);
+      color: #ffffff;
+      clip-path: polygon(10% 0, 100% 0, 100% 100%, 0% 100%);
+      padding: 3.5mm 8mm 3.5mm 14mm;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-end;
+      text-align: right;
+    }
+
+    .header-banner::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      width: 4mm;
+      background: rgba(11, 37, 69, 0.22);
+      transform: skewX(-16deg);
+    }
+
+    .doc-kicker {
+      font-size: 7pt;
+      font-weight: 700;
+      letter-spacing: 1.4px;
+      text-transform: uppercase;
+      color: #dbeafe;
+      margin-bottom: 1mm;
+    }
+
+    .doc-title {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 14.5pt;
+      font-weight: 800;
+      line-height: 1.08;
+      letter-spacing: 0.2px;
+      text-transform: uppercase;
+      text-shadow: 0 1px 2px rgba(0, 0, 0, 0.14);
+    }
+
+    .rentree-pill {
+      margin-top: 2mm;
+      background: #0b1220;
+      color: #ffffff;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 7.5pt;
+      font-weight: 700;
+      padding: 1.2mm 3.5mm;
+      border-radius: 99px;
+      letter-spacing: 0.5px;
+      border: 1px solid rgba(255, 255, 255, 0.22);
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .rentree-pill span.dot {
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background: #38bdf8;
+      display: inline-block;
+    }
+
+    /* ================= META STRIP ================= */
+    .meta-strip {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 2.2mm 8mm;
+      background: var(--blue-soft);
+      border-bottom: 1px solid var(--blue-border);
+      font-size: 7.8pt;
+      flex-shrink: 0;
+    }
+
+    .meta-item {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    .meta-label {
+      font-weight: 700;
+      color: var(--blue-deep);
+      text-transform: uppercase;
+      font-size: 7pt;
+      letter-spacing: 0.4px;
+    }
+
+    .meta-input {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-weight: 700;
+      font-size: 8pt;
+      color: var(--blue-dark);
+      background: #ffffff;
+      border: 1px solid var(--blue-border);
+      border-radius: 4px;
+      padding: 0.8mm 2.2mm;
+      width: 34mm;
+      text-align: center;
+    }
+
+    .meta-input:focus {
+      outline: none;
+      border-color: var(--blue-primary);
+    }
+
+    .status-badge {
+      font-size: 7.2pt;
+      font-weight: 700;
+      padding: 0.9mm 2.8mm;
+      border-radius: 99px;
+      background: #e0f2fe;
+      color: #0369a1;
+      border: 1px solid #bae6fd;
+    }
+
+    .status-badge.complete {
+      background: var(--success-bg);
+      color: var(--success);
+      border-color: #a7f3d0;
+    }
+
+    /* ================= FORM CONTENT ================= */
+    .form-body {
+      flex: 1;
+      padding: 4mm 8mm 3mm 8mm;
+      display: flex;
+      flex-direction: column;
+      gap: 3.6mm;
+    }
+
+    .section {
+      display: flex;
+      flex-direction: column;
+      gap: 2.2mm;
+    }
+
+    .section-header {
+      display: flex;
+      align-items: center;
+      gap: 2.2mm;
+      border-bottom: 1.5px solid #e2e8f0;
+      padding-bottom: 1mm;
+    }
+
+    .section-num {
+      width: 5.2mm;
+      height: 5.2mm;
+      border-radius: 4px;
+      background: var(--blue-primary);
+      color: #ffffff;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 7.8pt;
+      font-weight: 800;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .section-title {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 8.8pt;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      color: var(--blue-deep);
+    }
+
+    .section-hint {
+      margin-left: auto;
+      font-size: 6.8pt;
+      color: var(--ink-light);
+      font-style: italic;
+    }
+
+    /* ================= SECTION 1: IDENTITY + PHOTO ================= */
+    .identity-layout {
+      display: grid;
+      grid-template-columns: 1fr 29mm;
+      gap: 3.5mm;
+      align-items: start;
+    }
+
+    .identity-fields {
+      display: flex;
+      flex-direction: column;
+      gap: 2mm;
+    }
+
+    .photo-box {
+      width: 29mm;
+      height: 36mm;
+      border: 1.5px dashed #94a3b8;
+      border-radius: 6px;
+      background: var(--bg-field);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      cursor: pointer;
+      position: relative;
+      overflow: hidden;
+      transition: all 0.2s ease;
+    }
+
+    .photo-box:hover {
+      border-color: var(--blue-primary);
+      background: var(--blue-soft);
+    }
+
+    .photo-box.has-photo {
+      border-style: solid;
+      border-color: var(--blue-primary);
+    }
+
+    .photo-box img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: none;
+    }
+
+    .photo-box.has-photo img {
+      display: block;
+    }
+
+    .photo-box.has-photo .photo-placeholder {
+      display: none;
+    }
+
+    .photo-placeholder {
+      padding: 2mm;
+      color: var(--ink-muted);
+      font-size: 6.5pt;
+      line-height: 1.3;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1.2mm;
+    }
+
+    .photo-placeholder svg {
+      width: 18px;
+      height: 18px;
+      color: var(--blue-primary);
+      opacity: 0.8;
+    }
+
+    .photo-remove {
+      position: absolute;
+      top: 2px;
+      right: 2px;
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      background: rgba(15, 23, 42, 0.78);
+      color: #fff;
+      border: none;
+      font-size: 10px;
+      line-height: 1;
+      cursor: pointer;
+      display: none;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .photo-box.has-photo:hover .photo-remove {
+      display: flex;
+    }
+
+    /* ================= GRID & INPUTS ================= */
+    .row {
+      display: grid;
+      gap: 2.5mm;
+    }
+
+    .cols-2 { grid-template-columns: 1fr 1fr; }
+    .cols-3 { grid-template-columns: 1fr 1fr 1fr; }
+    .cols-civ { grid-template-columns: 36mm 1fr 1fr; }
+    .cols-addr { grid-template-columns: 1.2fr 0.9fr 1.1fr; }
+
+    .field {
+      display: flex;
+      flex-direction: column;
+      gap: 0.7mm;
+    }
+
+    .field label {
+      font-size: 6.8pt;
+      font-weight: 700;
+      color: var(--ink-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.3px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .req {
+      color: var(--blue-primary);
+      margin-left: 2px;
+    }
+
+    .age-pill {
+      font-size: 6.4pt;
+      font-weight: 700;
+      color: var(--blue-dark);
+      background: var(--blue-soft);
+      padding: 0 4px;
+      border-radius: 3px;
+      text-transform: none;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="date"],
+    select {
+      width: 100%;
+      height: 7.4mm;
+      padding: 0 2.4mm;
+      border: 1px solid var(--line-color);
+      border-radius: 4.5px;
+      background: var(--bg-field);
+      font-family: inherit;
+      font-size: 8.2pt;
+      font-weight: 500;
+      color: var(--ink-dark);
+      transition: border-color 0.15s ease, background 0.15s ease, box-shadow 0.15s ease;
+    }
+
+    input:focus,
+    select:focus {
+      outline: none;
+      border-color: var(--blue-primary);
+      background: #ffffff;
+      box-shadow: 0 0 0 2px rgba(0, 119, 230, 0.14);
+    }
+
+    input.invalid,
+    select.invalid {
+      border-color: var(--danger);
+      background: var(--danger-bg);
+    }
+
+    /* Interactive Pill Toggle Group */
+    .pill-group {
+      display: flex;
+      gap: 1.2mm;
+      height: 7.4mm;
+    }
+
+    .pill-option {
+      flex: 1;
+      position: relative;
+    }
+
+    .pill-option input {
+      position: absolute;
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    .pill-option span {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      border: 1px solid var(--line-color);
+      border-radius: 4.5px;
+      background: var(--bg-field);
+      font-size: 7.5pt;
+      font-weight: 600;
+      color: var(--ink-muted);
+      cursor: pointer;
+      transition: all 0.15s ease;
+      padding: 0 1.5mm;
+      white-space: nowrap;
+    }
+
+    .pill-option input:checked + span {
+      background: var(--blue-primary);
+      border-color: var(--blue-primary);
+      color: #ffffff;
+      box-shadow: 0 1px 4px rgba(0, 119, 230, 0.25);
+    }
+
+    /* ================= SECTION 2: SESSIONS ================= */
+    .sessions-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2.8mm;
+    }
+
+    .session-card {
+      position: relative;
+      cursor: pointer;
+    }
+
+    .session-card input {
+      position: absolute;
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    .session-inner {
+      border: 1.5px solid var(--line-color);
+      border-radius: 6px;
+      padding: 2.4mm 3mm;
+      background: var(--bg-field);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      transition: all 0.18s ease;
+    }
+
+    .session-card:hover .session-inner {
+      border-color: var(--blue-primary);
+    }
+
+    .session-card input:checked + .session-inner {
+      border-color: var(--blue-primary);
+      background: var(--blue-soft);
+      box-shadow: 0 2px 8px rgba(0, 119, 230, 0.14);
+    }
+
+    .session-name {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 8.3pt;
+      font-weight: 800;
+      color: var(--ink-dark);
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .session-time {
+      font-size: 7.8pt;
+      font-weight: 600;
+      color: var(--blue-dark);
+      margin-top: 0.6mm;
+    }
+
+    .session-check {
+      width: 4.8mm;
+      height: 4.8mm;
+      border-radius: 50%;
+      border: 1.5px solid #94a3b8;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: transparent;
+      flex-shrink: 0;
+      transition: all 0.15s ease;
+    }
+
+    .session-card input:checked + .session-inner .session-check {
+      background: var(--blue-primary);
+      border-color: var(--blue-primary);
+      color: #ffffff;
+    }
+
+    .level-obj-row {
+      display: grid;
+      grid-template-columns: 1.25fr 1fr;
+      gap: 3mm;
+      margin-top: 0.5mm;
+    }
+
+    /* ================= SECTION 3: PRICING & PAYMENT ================= */
+    .pricing-grid {
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 3mm;
+      align-items: stretch;
+    }
+
+    .plan-options {
+      display: flex;
+      flex-direction: column;
+      gap: 2mm;
+    }
+
+    .plan-card {
+      position: relative;
+      cursor: pointer;
+    }
+
+    .plan-card input {
+      position: absolute;
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    .plan-inner {
+      border: 1.5px solid var(--line-color);
+      border-radius: 6px;
+      padding: 2mm 3mm;
+      background: var(--bg-field);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      transition: all 0.15s ease;
+    }
+
+    .plan-card input:checked + .plan-inner {
+      border-color: var(--blue-primary);
+      background: var(--blue-soft);
+    }
+
+    .plan-title {
+      font-size: 8pt;
+      font-weight: 700;
+      color: var(--ink-dark);
+    }
+
+    .plan-sub {
+      font-size: 6.7pt;
+      color: var(--ink-muted);
+      margin-top: 0.3mm;
+    }
+
+    .plan-price {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 9pt;
+      font-weight: 800;
+      color: var(--blue-dark);
+      white-space: nowrap;
+    }
+
+    .summary-card {
+      background: linear-gradient(145deg, #0b2545 0%, #103766 100%);
+      color: #ffffff;
+      border-radius: 7px;
+      padding: 2.6mm 3.6mm;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .summary-card::after {
+      content: '';
+      position: absolute;
+      right: -12px;
+      top: -12px;
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background: rgba(56, 189, 248, 0.14);
+    }
+
+    .summary-row {
+      display: flex;
+      justify-content: space-between;
+      font-size: 7.4pt;
+      color: #cbd5e1;
+      padding: 0.5mm 0;
+    }
+
+    .summary-row strong {
+      color: #ffffff;
+      font-weight: 600;
+    }
+
+    .summary-divider {
+      height: 1px;
+      background: rgba(255, 255, 255, 0.16);
+      margin: 1mm 0;
+    }
+
+    .summary-total {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+
+    .summary-total span {
+      font-size: 7.4pt;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.4px;
+      color: #7dd3fc;
+    }
+
+    .summary-total strong {
+      font-size: 11pt;
+      font-weight: 800;
+      color: #ffffff;
+    }
+
+    .summary-balance {
+      display: flex;
+      justify-content: space-between;
+      font-size: 7pt;
+      color: #fde68a;
+      margin-top: 0.4mm;
+    }
+
+    .payment-mode-row {
+      display: grid;
+      grid-template-columns: 1.4fr 0.6fr;
+      gap: 2.8mm;
+      margin-top: 0.6mm;
+    }
+
+    .momo-strip {
+      margin-top: 1.4mm;
+      background: #f0f9ff;
+      border: 1px solid #bae6fd;
+      border-radius: 5px;
+      padding: 1.3mm 2.8mm;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 6px;
+      font-size: 7pt;
+      color: var(--blue-deep);
+    }
+
+    .momo-strip .momo-item {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      padding: 0.4mm 1.8mm;
+      border-radius: 4px;
+      transition: background 0.15s ease, color 0.15s ease;
+    }
+
+    .momo-strip .momo-item.active {
+      background: var(--blue-primary);
+      color: #ffffff;
+    }
+
+    /* ================= SECTION 4: ENGAGEMENT & SIGNATURES ================= */
+    .consent-box {
+      display: flex;
+      align-items: flex-start;
+      gap: 2.2mm;
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-radius: 5px;
+      padding: 1.8mm 2.8mm;
+      font-size: 7.3pt;
+      color: var(--ink-muted);
+      line-height: 1.35;
+      cursor: pointer;
+    }
+
+    .consent-box input[type="checkbox"] {
+      width: 14px;
+      height: 14px;
+      margin-top: 1px;
+      accent-color: var(--blue-primary);
+      cursor: pointer;
+      flex-shrink: 0;
+    }
+
+    .signatures-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4mm;
+      margin-top: 0.5mm;
+    }
+
+    .sig-box {
+      border: 1px solid var(--line-color);
+      border-radius: 6px;
+      padding: 2mm 2.8mm;
+      background: #ffffff;
+      display: flex;
+      flex-direction: column;
+      height: 31mm;
+    }
+
+    .sig-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 7pt;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: var(--blue-deep);
+      margin-bottom: 1mm;
+    }
+
+    .sig-clear-btn {
+      background: #f1f5f9;
+      border: 1px solid #cbd5e1;
+      color: var(--ink-muted);
+      font-size: 6.5pt;
+      font-weight: 600;
+      padding: 0.4mm 1.8mm;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+    .sig-clear-btn:hover {
+      background: #e2e8f0;
+      color: var(--ink-dark);
+    }
+
+    .sig-canvas-wrap {
+      flex: 1;
+      position: relative;
+      border-bottom: 1px dashed #cbd5e1;
+      background: #fafcff;
+      border-radius: 3px;
+      overflow: hidden;
+    }
+
+    #signatureCanvas {
+      width: 100%;
+      height: 100%;
+      display: block;
+      cursor: crosshair;
+      touch-action: none;
+    }
+
+    .sig-placeholder {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 7pt;
+      color: #cbd5e1;
+      pointer-events: none;
+      font-style: italic;
+    }
+
+    .sig-footer {
+      display: flex;
+      justify-content: space-between;
+      font-size: 6.8pt;
+      color: var(--ink-muted);
+      margin-top: 1mm;
+    }
+
+    .admin-box {
+      background: #f8fafc;
+      border-style: dashed;
+      border-color: #94a3b8;
+    }
+
+    .admin-stamp-area {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 7pt;
+      color: #94a3b8;
+      letter-spacing: 0.4px;
+      text-transform: uppercase;
+    }
+
+    /* ================= FOOTER (MATCHING FLYER) ================= */
+    .sheet-footer {
+      height: 13.5mm;
+      background: linear-gradient(100deg, #0b1220 0%, #0b1220 18.5%, #0077e6 18.8%, #005bb5 100%);
+      color: #ffffff;
+      padding: 0 6mm;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 6.7pt;
+      flex-shrink: 0;
+    }
+
+    .footer-tag {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-weight: 800;
+      font-size: 7pt;
+      letter-spacing: 0.4px;
+      text-transform: uppercase;
+      color: #38bdf8;
+    }
+
+    .footer-contacts {
+      display: flex;
+      align-items: center;
+      gap: 3.2mm;
+    }
+
+    .footer-item {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      font-weight: 500;
+      white-space: nowrap;
+    }
+
+    .footer-item svg {
+      width: 11px;
+      height: 11px;
+      flex-shrink: 0;
+      color: #bae6fd;
+    }
+
+    /* ================= PRINT / PDF EXACT A4 ================= */
+    @page {
+      size: A4 portrait;
+      margin: 0;
+    }
+
+    @media print {
+      * {
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+      }
+
+      body {
+        background: #ffffff;
+        padding: 0;
+        margin: 0;
+      }
+
+      .toolbar,
+      .toast,
+      .modal-backdrop,
+      .sig-clear-btn,
+      .photo-remove {
+        display: none !important;
+      }
+
+      .a4-sheet {
+        width: 210mm;
+        height: 297mm;
+        box-shadow: none;
+        margin: 0;
+        page-break-after: avoid;
+        page-break-inside: avoid;
+      }
+
+      input,
+      select {
+        box-shadow: none !important;
+      }
+
+      .sig-placeholder {
+        display: none !important;
+      }
+    }
+
+    /* Responsive tablet scaling */
+    @media screen and (max-width: 840px) and (min-width: 769px) {
+      .a4-sheet {
+        transform-origin: top center;
+        transform: scale(0.9);
+      }
+    }
+
+    /* Full Smartphone Responsive Mode (Screen Only — Print remains exact A4) */
+    @media screen and (max-width: 768px) {
+      body {
+        background: #f1f5f9;
+        padding-bottom: 24px;
+      }
+
+      .toolbar {
+        padding: 10px 12px;
+        margin-bottom: 12px;
+        gap: 8px;
+      }
+
+      .toolbar-left {
+        width: 100%;
+        justify-content: space-between;
+      }
+
+      .toolbar-actions {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 6px;
+      }
+
+      .toolbar-actions .btn {
+        justify-content: center;
+        padding: 9px 10px;
+        font-size: 12.5px;
+      }
+
+      .toolbar-actions .btn-submit {
+        grid-column: 1 / -1;
+        padding: 11px 14px;
+        font-size: 13.5px;
+      }
+
+      .a4-sheet {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        overflow: visible;
+        box-shadow: none;
+        transform: none;
+      }
+
+      .sheet-header {
+        flex-direction: column;
+        height: auto;
+      }
+
+      .header-brand {
+        width: 100%;
+        padding: 14px 16px;
+        gap: 12px;
+      }
+
+      .brand-logo {
+        width: 58px;
+      }
+
+      .brand-text h1 {
+        font-size: 16px;
+      }
+
+      .brand-tagline {
+        font-size: 11.5px;
+      }
+
+      .header-banner {
+        width: 100%;
+        clip-path: none;
+        padding: 14px 16px;
+        align-items: flex-start;
+        text-align: left;
+      }
+
+      .header-banner::before {
+        display: none;
+      }
+
+      .doc-kicker {
+        font-size: 10.5px;
+      }
+
+      .doc-title {
+        font-size: 20px;
+      }
+
+      .rentree-pill {
+        font-size: 11px;
+        padding: 5px 12px;
+        margin-top: 8px;
+      }
+
+      .meta-strip {
+        flex-wrap: wrap;
+        gap: 8px;
+        padding: 10px 16px;
+        font-size: 12px;
+      }
+
+      .meta-input {
+        width: 130px !important;
+        padding: 4px 8px;
+        font-size: 12.5px;
+      }
+
+      .form-body {
+        padding: 16px;
+        gap: 20px;
+      }
+
+      .section {
+        gap: 12px;
+      }
+
+      .section-num {
+        width: 24px;
+        height: 24px;
+        font-size: 12px;
+      }
+
+      .section-title {
+        font-size: 13px;
+      }
+
+      .section-hint {
+        display: none;
+      }
+
+      .identity-layout,
+      .cols-civ,
+      .cols-2,
+      .cols-3,
+      .cols-addr,
+      .sessions-grid,
+      .level-obj-row,
+      .pricing-grid,
+      .payment-mode-row,
+      .signatures-grid {
+        grid-template-columns: 1fr;
+        gap: 10px;
+      }
+
+      .photo-box {
+        width: 120px;
+        height: 145px;
+        margin: 4px auto;
+      }
+
+      .field label {
+        font-size: 11px;
+      }
+
+      input[type="text"],
+      input[type="email"],
+      input[type="tel"],
+      input[type="date"],
+      select {
+        height: 42px;
+        padding: 0 12px;
+        font-size: 14px;
+      }
+
+      .pill-group {
+        height: auto;
+        flex-wrap: wrap;
+        gap: 6px;
+      }
+
+      .pill-option {
+        min-width: calc(50% - 3px);
+      }
+
+      .pill-option span {
+        height: 38px;
+        font-size: 12.5px;
+      }
+
+      .session-inner,
+      .plan-inner {
+        padding: 12px 14px;
+      }
+
+      .session-name,
+      .plan-title {
+        font-size: 14px;
+      }
+
+      .session-time,
+      .plan-sub {
+        font-size: 12.5px;
+      }
+
+      .plan-price {
+        font-size: 15px;
+      }
+
+      .summary-card {
+        padding: 14px 16px;
+      }
+
+      .summary-row {
+        font-size: 13px;
+        padding: 3px 0;
+      }
+
+      .summary-total span {
+        font-size: 12px;
+      }
+
+      .summary-total strong {
+        font-size: 18px;
+      }
+
+      .summary-balance {
+        font-size: 12px;
+      }
+
+      .momo-strip {
+        padding: 10px 12px;
+        font-size: 12px;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .consent-box {
+        padding: 12px;
+        font-size: 12.5px;
+      }
+
+      .sig-box {
+        height: 145px;
+        padding: 10px 12px;
+      }
+
+      .sig-header,
+      .sig-footer {
+        font-size: 11px;
+      }
+
+      .sheet-footer {
+        height: auto;
+        background: #0b1220;
+        padding: 16px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        font-size: 12px;
+      }
+
+      .footer-contacts {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 6px;
+      }
+
+      .footer-item {
+        white-space: normal;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- FLOATING ACTION TOOLBAR (HIDDEN WHEN PRINTING) -->
+  <div class="toolbar">
+    <div class="toolbar-left">
+      <div class="toolbar-title">
+        <span>MSF'S English Academy</span>
+        <span class="toolbar-badge">Format A4</span>
+      </div>
+      <div class="progress-wrap">
+        <span>Complétion : <strong id="progressText">0%</strong></span>
+        <div class="progress-track">
+          <div class="progress-fill" id="progressFill"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="toolbar-actions">
+      <button type="button" class="btn btn-submit" id="btnSubmitSheet" title="Enregistrer dans Google Sheets et envoyer l'e-mail de confirmation">
+        ✅ Valider &amp; Envoyer
+      </button>
+      <button type="button" class="btn btn-whatsapp" id="btnWhatsApp" title="Envoyer la fiche remplie sur WhatsApp">
+        💬 WhatsApp
+      </button>
+      <button type="button" class="btn btn-primary" id="btnPrint" title="Imprimer ou enregistrer en PDF format A4">
+        🖨️ PDF A4
+      </button>
+      <button type="button" class="btn btn-ghost" id="btnReset" title="Effacer tous les champs">
+        ↺ Réinitialiser
+      </button>
+    </div>
+  </div>
+
+  <!-- TOAST -->
+  <div class="toast" id="toast"></div>
+
+  <!-- CONFIRMATION MODAL -->
+  <div class="modal-backdrop" id="confirmModal">
+    <div class="modal-card">
+      <div class="modal-icon">✓</div>
+      <h3>Inscription enregistrée !</h3>
+      <p>Votre dossier a bien été transmis à <strong>MSF'S English Learning Academy</strong> et un e-mail de confirmation contenant toutes les modalités vient de vous être envoyé.</p>
+      <div class="modal-dossier" id="modalDetails"></div>
+      <div class="modal-actions">
+        <button type="button" class="btn btn-primary" id="btnModalPrint">🖨️ Télécharger / Imprimer A4</button>
+        <button type="button" class="btn btn-whatsapp" id="btnModalWhatsApp">💬 Confirmer sur WhatsApp</button>
+        <button type="button" class="btn btn-ghost" id="btnModalClose" style="color:#0f172a;border-color:#cbd5e1;background:#f1f5f9;">Fermer</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- A4 SHEET -->
+  <form class="a4-sheet" id="registrationForm" novalidate>
+
+    <!-- HEADER -->
+    <header class="sheet-header">
+      <div class="header-brand">
+        <img src="logo.png" alt="Logo MSF'S English Learning Academy" class="brand-logo" />
+        <div class="brand-text">
+          <h1>MSF'S English<br />Learning Academy</h1>
+          <p class="brand-tagline">Une méthode d'apprentissage communicative et interactive pour tous les niveaux.</p>
+        </div>
+      </div>
+
+      <div class="header-banner">
+        <div class="doc-kicker">Fiche d'inscription officielle</div>
+        <div class="doc-title">Formation Standard<br />d'Anglais</div>
+        <div class="rentree-pill">
+          <span class="dot"></span>
+          RENTRÉE LE 5 DÉCEMBRE 2026
+        </div>
+      </div>
+    </header>
+
+    <!-- META BAR -->
+    <div class="meta-strip">
+      <div class="meta-item">
+        <span class="meta-label">N° de Dossier :</span>
+        <input type="text" id="dossierNum" name="dossierNum" class="meta-input" readonly />
+      </div>
+      <div class="meta-item">
+        <span class="meta-label">Date d'inscription :</span>
+        <input type="date" id="inscriptionDate" name="inscriptionDate" class="meta-input" style="width: 34mm;" />
+      </div>
+      <div class="meta-item">
+        <span class="status-badge" id="dossierStatus">En cours de saisie</span>
+      </div>
+    </div>
+
+    <!-- MAIN FORM BODY -->
+    <main class="form-body">
+
+      <!-- SECTION 1: IDENTITÉ DU CANDIDAT -->
+      <section class="section">
+        <div class="section-header">
+          <span class="section-num">1</span>
+          <h2 class="section-title">Identité du Candidat</h2>
+          <span class="section-hint">Les champs marqués * sont obligatoires</span>
+        </div>
+
+        <div class="identity-layout">
+          <div class="identity-fields">
+            <!-- Row 1 -->
+            <div class="row cols-civ">
+              <div class="field">
+                <label>Civilité <span class="req">*</span></label>
+                <div class="pill-group">
+                  <label class="pill-option">
+                    <input type="radio" name="civilite" value="M." required />
+                    <span>M.</span>
+                  </label>
+                  <label class="pill-option">
+                    <input type="radio" name="civilite" value="Mme" />
+                    <span>Mme</span>
+                  </label>
+                  <label class="pill-option">
+                    <input type="radio" name="civilite" value="Mlle" />
+                    <span>Mlle</span>
+                  </label>
+                </div>
+              </div>
+              <div class="field">
+                <label for="nom">Nom de famille <span class="req">*</span></label>
+                <input type="text" id="nom" name="nom" placeholder="Ex : KOFFI" required style="text-transform: uppercase;" />
+              </div>
+              <div class="field">
+                <label for="prenoms">Prénoms <span class="req">*</span></label>
+                <input type="text" id="prenoms" name="prenoms" placeholder="Ex : Kodjo Emmanuel" required />
+              </div>
+            </div>
+
+            <!-- Row 2 -->
+            <div class="row cols-3">
+              <div class="field">
+                <label for="dob">Date de naissance <span class="req">*</span> <span class="age-pill" id="ageDisplay"></span></label>
+                <input type="date" id="dob" name="dob" required />
+              </div>
+              <div class="field">
+                <label for="lieuNaissance">Lieu de naissance</label>
+                <input type="text" id="lieuNaissance" name="lieuNaissance" placeholder="Ex : Lomé" />
+              </div>
+              <div class="field">
+                <label for="nationalite">Nationalité</label>
+                <input type="text" id="nationalite" name="nationalite" placeholder="Ex : Togolaise" />
+              </div>
+            </div>
+
+            <!-- Row 3 -->
+            <div class="row cols-2">
+              <div class="field">
+                <label for="telephone">Téléphone / WhatsApp <span class="req">*</span></label>
+                <input type="tel" id="telephone" name="telephone" placeholder="+228 90 00 00 00" required />
+              </div>
+              <div class="field">
+                <label for="email">Adresse E-mail (Confirmation) <span class="req">*</span></label>
+                <input type="email" id="email" name="email" placeholder="exemple@email.com" required />
+              </div>
+            </div>
+          </div>
+
+          <!-- Interactive Photo Upload -->
+          <div class="photo-box" id="photoBox" title="Cliquer pour ajouter une photo d'identité">
+            <input type="file" id="photoInput" accept="image/*" hidden />
+            <img id="photoPreview" alt="Photo d'identité" />
+            <div class="photo-placeholder">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path>
+                <circle cx="12" cy="13" r="4"></circle>
+              </svg>
+              <strong>Photo d'identité</strong>
+              <span>Cliquer pour importer</span>
+            </div>
+            <button type="button" class="photo-remove" id="photoRemove" title="Supprimer la photo">×</button>
+          </div>
+        </div>
+
+        <!-- Row 4 (Full width) -->
+        <div class="row cols-addr">
+          <div class="field">
+            <label for="adresse">Quartier / Adresse de résidence <span class="req">*</span></label>
+            <input type="text" id="adresse" name="adresse" placeholder="Ex : Avedji, Agoè, Tokoin..." required />
+          </div>
+          <div class="field">
+            <label for="profession">Statut / Profession <span class="req">*</span></label>
+            <select id="profession" name="profession" required>
+              <option value="">-- Sélectionner --</option>
+              <option value="Étudiant(e)">Étudiant(e)</option>
+              <option value="Élève">Élève</option>
+              <option value="Salarié(e) / Cadre">Salarié(e) / Cadre</option>
+              <option value="Entrepreneur / Commerçant">Entrepreneur / Commerçant</option>
+              <option value="En recherche d'emploi">En recherche d'emploi</option>
+              <option value="Autre">Autre</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="urgence">Contact d'urgence (Nom & Tél.)</label>
+            <input type="text" id="urgence" name="urgence" placeholder="Ex : M. Koffi — +228 91..." />
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 2: CHOIX DE LA SESSION & NIVEAU -->
+      <section class="section">
+        <div class="section-header">
+          <span class="section-num">2</span>
+          <h2 class="section-title">Horaires des Cours & Profil Linguistique</h2>
+          <span class="section-hint">Sélectionnez votre créneau préféré</span>
+        </div>
+
+        <div class="sessions-grid">
+          <label class="session-card">
+            <input type="radio" name="session" value="Session Matin (08h00 - 11h00)" required />
+            <div class="session-inner">
+              <div>
+                <div class="session-name">☀️ Session Matin</div>
+                <div class="session-time">08h00 – 11h00</div>
+              </div>
+              <div class="session-check">✓</div>
+            </div>
+          </label>
+
+          <label class="session-card">
+            <input type="radio" name="session" value="Session Midi (12h30 - 14h00)" />
+            <div class="session-inner">
+              <div>
+                <div class="session-name">🌤️ Session Midi</div>
+                <div class="session-time">12h30 – 14h00</div>
+              </div>
+              <div class="session-check">✓</div>
+            </div>
+          </label>
+
+          <label class="session-card">
+            <input type="radio" name="session" value="Session Soir (18h30 - 20h00)" />
+            <div class="session-inner">
+              <div>
+                <div class="session-name">🌙 Session Soir</div>
+                <div class="session-time">18h30 – 20h00</div>
+              </div>
+              <div class="session-check">✓</div>
+            </div>
+          </label>
+        </div>
+
+        <div class="level-obj-row">
+          <div class="field">
+            <label>Niveau d'anglais estimé <span class="req">*</span></label>
+            <div class="pill-group">
+              <label class="pill-option">
+                <input type="radio" name="niveau" value="Débutant (A1)" required />
+                <span>Débutant</span>
+              </label>
+              <label class="pill-option">
+                <input type="radio" name="niveau" value="Élémentaire (A2)" />
+                <span>Élémentaire</span>
+              </label>
+              <label class="pill-option">
+                <input type="radio" name="niveau" value="Intermédiaire (B1/B2)" />
+                <span>Intermédiaire</span>
+              </label>
+              <label class="pill-option">
+                <input type="radio" name="niveau" value="Avancé (C1)" />
+                <span>Avancé</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="objectif">Objectif principal de la formation</label>
+            <select id="objectif" name="objectif">
+              <option value="Communication quotidienne">Communication & fluidité à l'oral</option>
+              <option value="Évolution professionnelle">Carrière & Anglais professionnel</option>
+              <option value="Études / Examens">Études supérieures & Examens</option>
+              <option value="Voyage / International">Voyage & Ouverture internationale</option>
+            </select>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 3: TARIFICATION & PAIEMENT -->
+      <section class="section">
+        <div class="section-header">
+          <span class="section-num">3</span>
+          <h2 class="section-title">Tarification & Modalités de Règlement</h2>
+          <span class="section-hint">Calcul automatique en FCFA</span>
+        </div>
+
+        <div class="pricing-grid">
+          <div class="plan-options">
+            <label class="plan-card">
+              <input type="radio" name="formulePaiement" value="integral" checked />
+              <div class="plan-inner">
+                <div>
+                  <div class="plan-title">Paiement Intégral (Recommandé)</div>
+                  <div class="plan-sub">Inscription (5 000 FCFA) + Formation complète (30 000 FCFA)</div>
+                </div>
+                <div class="plan-price">35 000 FCFA</div>
+              </div>
+            </label>
+
+            <label class="plan-card">
+              <input type="radio" name="formulePaiement" value="inscription_seule" />
+              <div class="plan-inner">
+                <div>
+                  <div class="plan-title">Frais d'Inscription Uniquement</div>
+                  <div class="plan-sub">Réserve votre place — Solde de 30 000 FCFA à régler avant la rentrée</div>
+                </div>
+                <div class="plan-price">5 000 FCFA</div>
+              </div>
+            </label>
+          </div>
+
+          <div class="summary-card">
+            <div>
+              <div class="summary-row">
+                <span>Frais d'inscription :</span>
+                <strong>5 000 FCFA</strong>
+              </div>
+              <div class="summary-row">
+                <span>Frais de formation :</span>
+                <strong>30 000 FCFA</strong>
+              </div>
+            </div>
+            <div>
+              <div class="summary-divider"></div>
+              <div class="summary-total">
+                <span>À régler ce jour</span>
+                <strong id="amountDueNow">35 000 FCFA</strong>
+              </div>
+              <div class="summary-balance">
+                <span>Reste à payer :</span>
+                <strong id="amountBalance">0 FCFA</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="payment-mode-row">
+          <div class="field">
+            <label>Mode de règlement souhaité <span class="req">*</span></label>
+            <div class="pill-group">
+              <label class="pill-option">
+                <input type="radio" name="modePaiement" value="Espèces (sur place)" required checked />
+                <span>Espèces</span>
+              </label>
+              <label class="pill-option">
+                <input type="radio" name="modePaiement" value="Mixx by Yas (TMoney)" />
+                <span>Mixx / TMoney</span>
+              </label>
+              <label class="pill-option">
+                <input type="radio" name="modePaiement" value="Flooz (Moov Money)" />
+                <span>Flooz</span>
+              </label>
+              <label class="pill-option">
+                <input type="radio" name="modePaiement" value="Virement" />
+                <span>Virement</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="refPaiement">Réf. transaction (si Mobile Money)</label>
+            <input type="text" id="refPaiement" name="refPaiement" placeholder="Ex : TX-849201" />
+          </div>
+        </div>
+
+        <div class="momo-strip">
+          <span><strong>📱 Numéros officiels Mobile Money :</strong></span>
+          <span class="momo-item" id="momoTmoney"><strong>Mixx / TMoney :</strong> +228 71 63 63 46</span>
+          <span class="momo-item" id="momoFlooz"><strong>Flooz :</strong> +228 98 06 89 85</span>
+        </div>
+      </section>
+
+      <!-- SECTION 4: ENGAGEMENT & SIGNATURES -->
+      <section class="section">
+        <div class="section-header">
+          <span class="section-num">4</span>
+          <h2 class="section-title">Engagement & Validation</h2>
+          <span class="section-hint">Signez directement dans le cadre ci-dessous</span>
+        </div>
+
+        <label class="consent-box">
+          <input type="checkbox" id="consentCheck" name="consentCheck" required />
+          <span>
+            Je certifie sur l'honneur l'exactitude des informations fournies ci-dessus et m'engage à respecter le règlement intérieur ainsi que l'assiduité requise par <strong>MSF'S English Learning Academy</strong>.
+          </span>
+        </label>
+
+        <div class="signatures-grid">
+          <!-- Candidate Signature Pad -->
+          <div class="sig-box">
+            <div class="sig-header">
+              <span>Signature du Candidat</span>
+              <button type="button" class="sig-clear-btn" id="btnClearSig">Effacer</button>
+            </div>
+            <div class="sig-canvas-wrap">
+              <canvas id="signatureCanvas"></canvas>
+              <div class="sig-placeholder" id="sigPlaceholder">Signer ici avec la souris ou le doigt</div>
+            </div>
+            <div class="sig-footer">
+              <span>Fait à Lomé, le <strong id="sigDateText"></strong></span>
+              <span>Lu et approuvé</span>
+            </div>
+          </div>
+
+          <!-- Administration Reserved Box -->
+          <div class="sig-box admin-box">
+            <div class="sig-header">
+              <span>Cadre réservé à l'Administration</span>
+            </div>
+            <div class="admin-stamp-area">
+              Cachet &amp; Signature de la Direction
+            </div>
+            <div class="sig-footer">
+              <span>Reçu N° : _______________</span>
+              <span>Validé le : ____/____/2026</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- FOOTER (MATCHING FLYER) -->
+    <footer class="sheet-footer">
+      <div class="footer-tag">MSF'S Academy</div>
+      <div class="footer-contacts">
+        <div class="footer-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"></path>
+          </svg>
+          <span>+228 98 06 89 85</span>
+        </div>
+        <div class="footer-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+            <polyline points="22,6 12,13 2,6"></polyline>
+          </svg>
+          <span>msfenglishlearningacademy.com</span>
+        </div>
+        <div class="footer-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+            <circle cx="12" cy="10" r="3"></circle>
+          </svg>
+          <span>Carrefour Adroukpapé à Avedji limosine en allant vers opéra</span>
+        </div>
+      </div>
+    </footer>
+
+  </form>
+
+  <script>
+    (function () {
+      // ⚙️ URL DE VOTRE APPLICATION WEB GOOGLE APPS SCRIPT
+      const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbzU6sbL7EMpG-a1imBsCGTzKv1HuJ_nuRZ7q0G0QxPnIZAOpDtzzdWrCTp-ld9N3GiNQw/exec';
+
+      const STORAGE_KEY = 'msf_academy_inscription_v1';
+      const form = document.getElementById('registrationForm');
+      const dossierInput = document.getElementById('dossierNum');
+      const inscriptionDateInput = document.getElementById('inscriptionDate');
+      const sigDateText = document.getElementById('sigDateText');
+      const dobInput = document.getElementById('dob');
+      const ageDisplay = document.getElementById('ageDisplay');
+      const progressFill = document.getElementById('progressFill');
+      const progressText = document.getElementById('progressText');
+      const dossierStatus = document.getElementById('dossierStatus');
+      const amountDueNow = document.getElementById('amountDueNow');
+      const amountBalance = document.getElementById('amountBalance');
+      const toastEl = document.getElementById('toast');
+      const confirmModal = document.getElementById('confirmModal');
+      const modalDetails = document.getElementById('modalDetails');
+      const btnSubmitSheet = document.getElementById('btnSubmitSheet');
+
+      // --- Helpers ---
+      function showToast(msg, type = 'info') {
+        toastEl.textContent = msg;
+        toastEl.className = 'toast show ' + type;
+        clearTimeout(showToast._timer);
+        showToast._timer = setTimeout(() => {
+          toastEl.classList.remove('show');
+        }, 3200);
+      }
+
+      function generateDossierNumber() {
+        const rand = Math.floor(1000 + Math.random() * 9000);
+        return `MSF-2026-${rand}`;
+      }
+
+      function formatDateFR(isoDate) {
+        if (!isoDate) return '____/____/2026';
+        const parts = isoDate.split('-');
+        if (parts.length !== 3) return isoDate;
+        return `${parts[2]}/${parts[1]}/${parts[0]}`;
+      }
+
+      function getTodayISO() {
+        const d = new Date();
+        const yyyy = d.getFullYear();
+        const mm = String(d.getMonth() + 1).padStart(2, '0');
+        const dd = String(d.getDate()).padStart(2, '0');
+        return `${yyyy}-${mm}-${dd}`;
+      }
+
+      // --- Init Defaults ---
+      function initDefaults() {
+        if (!dossierInput.value) dossierInput.value = generateDossierNumber();
+        if (!inscriptionDateInput.value) inscriptionDateInput.value = getTodayISO();
+        sigDateText.textContent = formatDateFR(inscriptionDateInput.value);
+      }
+
+      inscriptionDateInput.addEventListener('change', () => {
+        sigDateText.textContent = formatDateFR(inscriptionDateInput.value);
+        saveState();
+      });
+
+      // --- Age Auto-Calculation ---
+      function updateAge() {
+        if (!dobInput.value) {
+          ageDisplay.textContent = '';
+          return;
+        }
+        const birth = new Date(dobInput.value);
+        const today = new Date();
+        let age = today.getFullYear() - birth.getFullYear();
+        const m = today.getMonth() - birth.getMonth();
+        if (m < 0 || (m === 0 && today.getDate() < birth.getDate())) age--;
+        if (age >= 5 && age <= 100) {
+          ageDisplay.textContent = `${age} ans`;
+        } else {
+          ageDisplay.textContent = '';
+        }
+      }
+      dobInput.addEventListener('change', updateAge);
+
+      // --- Dynamic Pricing ---
+      function updatePricing() {
+        const selected = form.querySelector('input[name="formulePaiement"]:checked');
+        if (selected && selected.value === 'inscription_seule') {
+          amountDueNow.textContent = '5 000 FCFA';
+          amountBalance.textContent = '30 000 FCFA';
+        } else {
+          amountDueNow.textContent = '35 000 FCFA';
+          amountBalance.textContent = '0 FCFA';
+        }
+      }
+      form.querySelectorAll('input[name="formulePaiement"]').forEach(el => {
+        el.addEventListener('change', () => {
+          updatePricing();
+          saveState();
+        });
+      });
+
+      // --- Interactive Photo Upload ---
+      const photoBox = document.getElementById('photoBox');
+      const photoInput = document.getElementById('photoInput');
+      const photoPreview = document.getElementById('photoPreview');
+      const photoRemove = document.getElementById('photoRemove');
+
+      photoBox.addEventListener('click', (e) => {
+        if (e.target === photoRemove) return;
+        photoInput.click();
+      });
+
+      photoInput.addEventListener('change', () => {
+        const file = photoInput.files[0];
+        if (!file) return;
+        const reader = new FileReader();
+        reader.onload = (ev) => {
+          photoPreview.src = ev.target.result;
+          photoBox.classList.add('has-photo');
+          saveState();
+        };
+        reader.readAsDataURL(file);
+      });
+
+      photoRemove.addEventListener('click', (e) => {
+        e.stopPropagation();
+        photoPreview.src = '';
+        photoInput.value = '';
+        photoBox.classList.remove('has-photo');
+        saveState();
+      });
+
+      // --- Interactive Signature Canvas ---
+      const canvas = document.getElementById('signatureCanvas');
+      const sigPlaceholder = document.getElementById('sigPlaceholder');
+      const btnClearSig = document.getElementById('btnClearSig');
+      const ctx = canvas.getContext('2d');
+      let drawing = false;
+      let hasSignature = false;
+
+      function resizeCanvas() {
+        const rect = canvas.getBoundingClientRect();
+        const dpr = window.devicePixelRatio || 1;
+        const prevData = hasSignature ? canvas.toDataURL() : null;
+        canvas.width = rect.width * dpr;
+        canvas.height = rect.height * dpr;
+        ctx.scale(dpr, dpr);
+        ctx.lineCap = 'round';
+        ctx.lineJoin = 'round';
+        ctx.strokeStyle = '#0f172a';
+        ctx.lineWidth = 1.9;
+        if (prevData) {
+          const img = new Image();
+          img.onload = () => ctx.drawImage(img, 0, 0, rect.width, rect.height);
+          img.src = prevData;
+        }
+      }
+
+      function getPos(e) {
+        const rect = canvas.getBoundingClientRect();
+        const clientX = e.touches ? e.touches[0].clientX : e.clientX;
+        const clientY = e.touches ? e.touches[0].clientY : e.clientY;
+        return { x: clientX - rect.left, y: clientY - rect.top };
+      }
+
+      function startDraw(e) {
+        drawing = true;
+        const pos = getPos(e);
+        ctx.beginPath();
+        ctx.moveTo(pos.x, pos.y);
+        if (!hasSignature) {
+          hasSignature = true;
+          sigPlaceholder.style.display = 'none';
+          updateProgress();
+        }
+      }
+
+      function draw(e) {
+        if (!drawing) return;
+        e.preventDefault();
+        const pos = getPos(e);
+        ctx.lineTo(pos.x, pos.y);
+        ctx.stroke();
+      }
+
+      function stopDraw() {
+        if (!drawing) return;
+        drawing = false;
+        ctx.closePath();
+        saveState();
+      }
+
+      canvas.addEventListener('mousedown', startDraw);
+      canvas.addEventListener('mousemove', draw);
+      window.addEventListener('mouseup', stopDraw);
+      canvas.addEventListener('touchstart', startDraw, { passive: false });
+      canvas.addEventListener('touchmove', draw, { passive: false });
+      canvas.addEventListener('touchend', stopDraw);
+
+      btnClearSig.addEventListener('click', () => {
+        const rect = canvas.getBoundingClientRect();
+        ctx.clearRect(0, 0, rect.width, rect.height);
+        hasSignature = false;
+        sigPlaceholder.style.display = 'flex';
+        updateProgress();
+        saveState();
+      });
+
+      // --- Progress Tracking ---
+      function isValidEmail(val) {
+        return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(val.trim());
+      }
+
+      function updateProgress() {
+        const checks = [
+          !!form.querySelector('input[name="civilite"]:checked'),
+          document.getElementById('nom').value.trim().length > 0,
+          document.getElementById('prenoms').value.trim().length > 0,
+          document.getElementById('dob').value.length > 0,
+          document.getElementById('telephone').value.trim().length >= 6,
+          isValidEmail(document.getElementById('email').value),
+          document.getElementById('adresse').value.trim().length > 0,
+          document.getElementById('profession').value.length > 0,
+          !!form.querySelector('input[name="session"]:checked'),
+          !!form.querySelector('input[name="niveau"]:checked'),
+          document.getElementById('consentCheck').checked
+        ];
+        const done = checks.filter(Boolean).length;
+        const pct = Math.round((done / checks.length) * 100);
+        progressFill.style.width = pct + '%';
+        progressText.textContent = pct + '%';
+
+        if (pct === 100) {
+          dossierStatus.textContent = '✓ Dossier Complet';
+          dossierStatus.classList.add('complete');
+        } else {
+          dossierStatus.textContent = `En cours (${pct}%)`;
+          dossierStatus.classList.remove('complete');
+        }
+        return pct;
+      }
+
+      // --- LocalStorage Auto-Save ---
+      function saveState() {
+        const data = {};
+        new FormData(form).forEach((val, key) => { data[key] = val; });
+        data.consentCheck = document.getElementById('consentCheck').checked;
+        if (photoBox.classList.contains('has-photo')) {
+          data.photo = photoPreview.src;
+        }
+        try {
+          localStorage.setItem(STORAGE_KEY, JSON.stringify(data));
+        } catch (err) {
+          // Ignore quota errors for large photos
+        }
+      }
+
+      function loadState() {
+        try {
+          const raw = localStorage.getItem(STORAGE_KEY);
+          if (!raw) return;
+          const data = JSON.parse(raw);
+          Object.entries(data).forEach(([key, val]) => {
+            if (key === 'photo' && val) {
+              photoPreview.src = val;
+              photoBox.classList.add('has-photo');
+              return;
+            }
+            if (key === 'consentCheck') {
+              document.getElementById('consentCheck').checked = !!val;
+              return;
+            }
+            const els = form.querySelectorAll(`[name="${key}"]`);
+            if (!els.length) return;
+            if (els[0].type === 'radio') {
+              els.forEach(r => { r.checked = (r.value === val); });
+            } else {
+              els[0].value = val;
+            }
+          });
+        } catch (err) {
+          // Ignore parse errors
+        }
+      }
+
+      form.addEventListener('input', (e) => {
+        if (e.target.classList) e.target.classList.remove('invalid');
+        updateProgress();
+        saveState();
+      });
+
+      form.addEventListener('change', () => {
+        updateProgress();
+        saveState();
+      });
+
+      // --- Validation Helper ---
+      function validateRequired() {
+        let valid = true;
+        const requiredTextIds = ['nom', 'prenoms', 'dob', 'telephone', 'email', 'adresse', 'profession'];
+        requiredTextIds.forEach(id => {
+          const el = document.getElementById(id);
+          const ok = id === 'email' ? isValidEmail(el.value) : el.value.trim().length > 0;
+          if (!ok) {
+            el.classList.add('invalid');
+            valid = false;
+          } else {
+            el.classList.remove('invalid');
+          }
+        });
+        if (!form.querySelector('input[name="civilite"]:checked')) valid = false;
+        if (!form.querySelector('input[name="session"]:checked')) valid = false;
+        if (!form.querySelector('input[name="niveau"]:checked')) valid = false;
+        if (!document.getElementById('consentCheck').checked) valid = false;
+        return valid;
+      }
+
+      // --- Collect Form Payload for Google Sheets ---
+      function collectPayload() {
+        const isInscriptionSeule = form.querySelector('input[name="formulePaiement"]:checked')?.value === 'inscription_seule';
+        return {
+          dossierNum: dossierInput.value,
+          inscriptionDate: formatDateFR(inscriptionDateInput.value),
+          civilite: form.querySelector('input[name="civilite"]:checked')?.value || '',
+          nom: document.getElementById('nom').value.trim().toUpperCase(),
+          prenoms: document.getElementById('prenoms').value.trim(),
+          dob: formatDateFR(document.getElementById('dob').value),
+          lieuNaissance: document.getElementById('lieuNaissance').value.trim(),
+          nationalite: document.getElementById('nationalite').value.trim(),
+          telephone: document.getElementById('telephone').value.trim(),
+          email: document.getElementById('email').value.trim(),
+          adresse: document.getElementById('adresse').value.trim(),
+          profession: document.getElementById('profession').value,
+          urgence: document.getElementById('urgence').value.trim(),
+          session: form.querySelector('input[name="session"]:checked')?.value || '',
+          niveau: form.querySelector('input[name="niveau"]:checked')?.value || '',
+          objectif: document.getElementById('objectif').value,
+          formuleLabel: isInscriptionSeule ? 'Inscription seule (5 000 FCFA)' : 'Paiement intégral (35 000 FCFA)',
+          montantVerse: isInscriptionSeule ? '5 000 FCFA' : '35 000 FCFA',
+          resteAPayer: isInscriptionSeule ? '30 000 FCFA' : '0 FCFA',
+          modePaiement: form.querySelector('input[name="modePaiement"]:checked')?.value || '',
+          refPaiement: document.getElementById('refPaiement').value.trim()
+        };
+      }
+
+      // --- Highlight Official Mobile Money Number ---
+      function updateMomoHighlight() {
+        const mode = form.querySelector('input[name="modePaiement"]:checked')?.value || '';
+        document.getElementById('momoTmoney').classList.toggle('active', mode.includes('TMoney'));
+        document.getElementById('momoFlooz').classList.toggle('active', mode.includes('Flooz'));
+      }
+      form.querySelectorAll('input[name="modePaiement"]').forEach(el => {
+        el.addEventListener('change', updateMomoHighlight);
+      });
+
+      // --- Submit to Google Sheets + Trigger Confirmation Email ---
+      let lastSubmittedDossier = null;
+
+      btnSubmitSheet.addEventListener('click', async () => {
+        if (!validateRequired()) {
+          showToast('Veuillez remplir tous les champs obligatoires (*), un e-mail valide et cocher l\'engagement.', 'error');
+          return;
+        }
+
+        if (lastSubmittedDossier === dossierInput.value) {
+          showToast('Ce dossier a déjà été envoyé ! Cliquez sur Réinitialiser pour une nouvelle inscription.', 'info');
+          confirmModal.classList.add('open');
+          return;
+        }
+
+        if (!GOOGLE_SCRIPT_URL || GOOGLE_SCRIPT_URL.includes('COLLER_ICI')) {
+          showToast('Lien Google Sheet non configuré : suivez GUIDE_GOOGLE_SHEET.md pour coller votre URL Apps Script.', 'error');
+          return;
+        }
+
+        const payload = collectPayload();
+        btnSubmitSheet.disabled = true;
+        btnSubmitSheet.textContent = '⏳ Envoi en cours...';
+
+        try {
+          const response = await fetch(GOOGLE_SCRIPT_URL, {
+            method: 'POST',
+            headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+            body: JSON.stringify(payload)
+          });
+
+          let ok = response.ok;
+          try {
+            const result = await response.json();
+            if (result && result.status === 'error') {
+              throw new Error(result.message || 'Erreur serveur Apps Script');
+            }
+          } catch (parseErr) {
+            if (!ok) throw parseErr;
+          }
+
+          lastSubmittedDossier = payload.dossierNum;
+          modalDetails.innerHTML = [
+            `<strong>N° de dossier :</strong> ${payload.dossierNum}`,
+            `<strong>Candidat :</strong> ${payload.civilite} ${payload.prenoms} ${payload.nom}`,
+            `<strong>Session :</strong> ${payload.session}`,
+            `<strong>E-mail de confirmation :</strong> ${payload.email}`,
+            `<strong>Mobile Money :</strong> TMoney +228 71 63 63 46 &nbsp;|&nbsp; Flooz +228 98 06 89 85`,
+            `<strong>Lieu :</strong> Carrefour Adroukpapé à Avedji limosine en allant vers opéra`
+          ].join('<br />');
+          confirmModal.classList.add('open');
+          showToast('Inscription enregistrée et e-mail de confirmation envoyé !', 'success');
+        } catch (err) {
+          console.error(err);
+          showToast('Erreur de connexion. Vérifiez votre connexion Internet et réessayez.', 'error');
+        } finally {
+          btnSubmitSheet.disabled = false;
+          btnSubmitSheet.textContent = '✅ Valider & Envoyer';
+        }
+      });
+
+      document.getElementById('btnModalClose').addEventListener('click', () => {
+        confirmModal.classList.remove('open');
+      });
+      document.getElementById('btnModalPrint').addEventListener('click', () => {
+        confirmModal.classList.remove('open');
+        setTimeout(() => window.print(), 150);
+      });
+      document.getElementById('btnModalWhatsApp').addEventListener('click', () => {
+        confirmModal.classList.remove('open');
+        document.getElementById('btnWhatsApp').click();
+      });
+
+      // --- Toolbar Actions ---
+      document.getElementById('btnReset').addEventListener('click', () => {
+        if (!confirm('Voulez-vous vraiment effacer toutes les données saisies ?')) return;
+        form.reset();
+        localStorage.removeItem(STORAGE_KEY);
+        lastSubmittedDossier = null;
+        photoPreview.src = '';
+        photoBox.classList.remove('has-photo');
+        btnClearSig.click();
+        dossierInput.value = generateDossierNumber();
+        inscriptionDateInput.value = getTodayISO();
+        sigDateText.textContent = formatDateFR(inscriptionDateInput.value);
+        updateAge();
+        updatePricing();
+        updateMomoHighlight();
+        updateProgress();
+        showToast('Formulaire réinitialisé.', 'info');
+      });
+
+      document.getElementById('btnWhatsApp').addEventListener('click', () => {
+        if (!validateRequired()) {
+          showToast('Veuillez remplir tous les champs obligatoires (*) et cocher l\'engagement.', 'error');
+          return;
+        }
+        const civ = form.querySelector('input[name="civilite"]:checked')?.value || '';
+        const nom = document.getElementById('nom').value.trim().toUpperCase();
+        const prenoms = document.getElementById('prenoms').value.trim();
+        const tel = document.getElementById('telephone').value.trim();
+        const adresse = document.getElementById('adresse').value.trim();
+        const prof = document.getElementById('profession').value;
+        const session = form.querySelector('input[name="session"]:checked')?.value || '';
+        const niveau = form.querySelector('input[name="niveau"]:checked')?.value || '';
+        const formule = form.querySelector('input[name="formulePaiement"]:checked')?.value === 'inscription_seule'
+          ? 'Inscription seule (5 000 FCFA — Reste 30 000 FCFA)'
+          : 'Paiement intégral (35 000 FCFA)';
+        const mode = form.querySelector('input[name="modePaiement"]:checked')?.value || '';
+        const ref = document.getElementById('refPaiement').value.trim();
+
+        const msg = [
+          `🎓 *NOUVELLE INSCRIPTION — MSF'S ENGLISH LEARNING ACADEMY*`,
+          `📋 *N° Dossier :* ${dossierInput.value}`,
+          `📅 *Formation :* Formation Standard d'Anglais (Rentrée 5 Déc. 2026)`,
+          ``,
+          `👤 *Candidat :* ${civ} ${nom} ${prenoms}`,
+          `📞 *Téléphone :* ${tel}`,
+          `📍 *Quartier :* ${adresse}`,
+          `💼 *Statut :* ${prof}`,
+          ``,
+          `🕒 *Session choisie :* ${session}`,
+          `📊 *Niveau estimé :* ${niveau}`,
+          `💳 *Formule :* ${formule}`,
+          `💰 *Mode de paiement :* ${mode}${ref ? ` (Réf: ${ref})` : ''}`
+        ].join('\n');
+
+        const url = `https://wa.me/22898068985?text=${encodeURIComponent(msg)}`;
+        window.open(url, '_blank');
+        showToast('Ouverture de WhatsApp avec votre fiche d\'inscription...', 'success');
+      });
+
+      document.getElementById('btnPrint').addEventListener('click', () => {
+        window.print();
+      });
+
+      // --- Boot ---
+      loadState();
+      initDefaults();
+      updateAge();
+      updatePricing();
+      updateMomoHighlight();
+      updateProgress();
+      window.addEventListener('load', resizeCanvas);
+      window.addEventListener('resize', resizeCanvas);
+    })();
+  </script>
+</body>
+</html>
